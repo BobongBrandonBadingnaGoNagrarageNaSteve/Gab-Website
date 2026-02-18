@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gab's Personal Website</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #1f1f1f;
+}
+
+.glowing-border{
+    border: 2px solid #61000f;
+    box-shadow: 0 0 30px #eb314e;
+}
+
+header {
+    background-image: url("https://images8.alphacoders.com/699/699504.jpg");
+    background-size: cover;
+    background-position: center 30%;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 40px;
+    font-family: "Tangerine", cursive;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+nav {
+    background-color: #804646;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+nav ul li {
+    padding: 15px 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    font-size: 20px;
+    font-family: "Tangerine", cursive;
+    color: #820313;
+    text-shadow:
+        0 0 10px #ffa1a1,
+        0 0 20px #ffa1a1,
+        0 0 30px #ffa1a1,
+        0 0 70px #ffa1a1,
+        0 0 80px #ffa1a1,
+        0 0 110px #ffa1a1;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.sidebar {
+    width: 400px;
+	height: 825px;
+    text-align: center;
+    color: white;
+    background-color: #454545;
+    padding: 20px;
+    border-radius: 8px;
+    text-shadow: 0 0 10px #ffa1a1;
+}
+
+.sidebar img {
+    width: 100%;
+    height: 200px;         /* fixed box height */
+    object-fit: cover;     /* maintain aspect ratio, crop if necessary */
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px #eb314e;
+}
+
+.main-content {
+    width: 100%;
+}
+
+.content-box {
+    background-color: #454545;
+    padding: 20px;
+    color: white;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-shadow: 0 0 10px #ffa1a1;
+    box-shadow: 0 0 30px #eb314e;
+}
+
+.content-box h2 {
+    margin-bottom: 5px;
+}
+
+.date {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 15px;
+    text-shadow: 0 0 10px #ffa1a1;
+}
+
+.image-row {
+    display: flex;
+    gap: 10px;
+    color:white;
+    margin-bottom: 28px;
+    text-shadow: 0 0 10px #ffa1a1;
+}
+
+.image-row img {
+    width: 100%;
+	margin-right:10px;
+	padding-right: 30px;
+    max-width: 32%;       /* each image fills up to 1/3 of row */
+    height: 250px;        /* fixed height for consistent boxes */
+    object-fit: cover;    /* maintain aspect ratio */
+    border-radius: 6px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar,
+    .main-content {
+        width: 100%;
+    }
+
+    .image-row {
+        flex-direction: column;
+    }
+
+    .image-row img {
+        max-width: 100%;
+        height: 200px;
+    }
+}
+</style>
+</head>
+
+<body>
+<div class="glowing-border">
+<!-- HEADER -->
+<header>
+    <h1>Gab's Creative Space</h1>
+    <p>Game Developer • Gamer • Rider</p>
+</header>
+
+<!-- NAVIGATION -->
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- MAIN LAYOUT -->
+<div class="container glowing-border">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar glowing-border">
+        <h2>About Me</h2>
+        <img src="me2.jpg" alt="Profile Image">
+        <p>Hi! I'm Gab, a game addict who loves to ride bike.</p>
+
+        <h3 style="margin-top:20px;">My Interests</h3>
+        <img src="sidebar1.jpg" alt="Interest 1">
+        <img src="sidebar2.jpg" alt="Interest 2">
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+
+        <!-- CONTENT BLOCK 1 -->
+        <div class="content-box">
+            <h2>My Mock-up Game Projects</h2>
+            <div class="date">February 2026</div>
+
+            <div class="image-row">
+                <img src="mockup2.jpeg" alt="">
+                <img src="mockup4.jpeg" alt="">
+                <img src="mockup5.jpeg" alt="">
+            </div>
+
+            <p>
+                This project focuses on creating smooth player controls and immersive gameplay mechanics. 
+                I experimented with physics systems and responsive UI elements.
+            </p>
+            <p>
+                My goal was to design a game that feels intuitive and satisfying to play, while maintaining a clean and modern visual style.
+            </p>
+        </div>
+
+        <!-- CONTENT BLOCK 2 -->
+        <div class="content-box">
+            <h2>Riding Adventure</h2>
+
+            <div class="image-row">
+                <img src="https://ridermagazine.com/wp-content/uploads/2018/03/8-Hwy550.jpg" alt="">
+                <img src="https://motorcycletraining.com/wp-content/uploads/2024/01/motorcycle-riders-on-the-highway-in-Arizona.jpg" alt="">
+                <img src="https://i.redd.it/jlw8lqqg0jx31.jpg" alt="">
+            </div>
+
+            <p>
+                Riding a motorbike offers a unique sense of freedom and connection with the road.
+            </p>
+            <p>
+                There’s also a sense of adventure and independence, as each journey feels more personal and immersive.
+            </p>
+        </div>
+
+    </div>
+</div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Gab | Personal Portfolio Website</p>
+</footer>
+
+</body>
+</html>
